@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="angular-1.2.2.min.js"></script>
+    <script type="text/javascript" src="ohmsFormula.js"></script>
+    <title></title>
+</head>
+<body data-ng-app="ohmCalculator">
+    <div data-ng-controller="calculator">
+        <input type="number" data-ng-model="voltage" data-ng-focus="listFixer('voltage')" placeholder="V"/>
+        <input type="number" data-ng-model="current" data-ng-focus="listFixer('current')" placeholder="I"/>
+        <input type="number" data-ng-model="resistance" data-ng-focus="listFixer('resistance')" placeholder="r"/>
+    </div>
+</html>
