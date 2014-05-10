@@ -2,14 +2,32 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="looksGood.css"/>
     <script type="text/javascript" src="angular-1.2.2.min.js"></script>
     <script type="text/javascript" src="ohmsFormula.js"></script>
     <title></title>
 </head>
 <body data-ng-app="ohmCalculator">
-    <div data-ng-controller="calculator">
-        <input type="number" data-ng-model="voltage" data-ng-focus="listFixer('voltage')" placeholder="V"/>
-        <input type="number" data-ng-model="current" data-ng-focus="listFixer('current')" placeholder="I"/>
-        <input type="number" data-ng-model="resistance" data-ng-focus="listFixer('resistance')" placeholder="r"/>
+    <div data-ng-controller="calculator" class="background ">
+    <div class="left"></div>
+        <div class="center">
+            <div>
+                <h1>Ohm's Law</h1>
+                <p>Ohm's law states that the current through a conductor between two points is directly proportional to
+                    the potential difference across the two points. Introducing the constant of proportionality, the
+                    resistance, one arrives at the usual mathematical equation that describes this relationship:
+
+                    I = V &divide; R
+                    where I is the current through the conductor in units of amperes, V is the potential difference
+                    measured across the conductor in units of volts, and R is the resistance of the conductor in units
+                    of ohms. More specifically, Ohm's law states that the R in this relation is constant, independent
+                    of the current.</p>
+                <input type="number" data-ng-model="voltage" data-ng-focus="listFixer('voltage')" placeholder="V"/> =
+                <input type="number" data-ng-model="current" data-ng-focus="listFixer('current')" placeholder="I"/> &times;
+                <input type="number" data-ng-model="resistance" data-ng-focus="listFixer('resistance')" placeholder="r"/>
+            </div>
+        </div>
+    <div class="right"></div>
     </div>
+</body>
 </html>

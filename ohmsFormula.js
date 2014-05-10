@@ -24,6 +24,10 @@ angular.module("ohmCalculator", [])
         $scope.calculate = function(){
             if($scope.list.length == 2) {
 
+                if($scope[$scope.list[1]] < 0){
+                    $scope[$scope.list[1]] = 0;
+                }
+
                 if ($scope.list.indexOf("voltage") == -1) {
                     $scope.voltage = $scope.current * $scope.resistance;
                 }
